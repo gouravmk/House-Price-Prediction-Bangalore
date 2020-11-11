@@ -36,8 +36,9 @@ def load_saved_artifacts():
         __model = pickle.load(f)
     print("loading artifacts...done")
 
+# 2k17/Mc/81/gitTry
 def get_location_names():
-    return __loc
+    return __locations
 
 def get_data_columns():
     return __data_columns
