@@ -37,7 +37,7 @@ def load_saved_artifacts():
     print("loading artifacts...done")
 
 def get_location_names():
-    return __locations
+    return __loc
 
 def get_data_columns():
     return __data_columns
