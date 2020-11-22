@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bangaluru Home Price Prediction</title>
+	<title>Bangaluru Home Price Prediction</title>
+	<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/en/b/b5/DTU%2C_Delhi_official_logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
 	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="img"></div>
-<form class="form">
-	<h2>Area (Square Feet)</h2>
+<div class="cntent"><br><br>
+<form class="form" style="margin-left:20%;">
+	<h4 style="color:#edb43e">Area (Square Feet)</h4>
     <input class="area"  type="email" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
-	<h2>BHK</h2>
-	<div class="switch-field">
-		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+	<h4 style="color:#edb43e">BHK</h4>
+	<div class="switch-field form-group">
+		<input class="form-control" type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
 		<label for="radio-bhk-1">1</label>
-		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<input class="form-control" type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
 		<label for="radio-bhk-2">2</label>
-		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<input class="form-control" type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
 		<label for="radio-bhk-3">3</label>
-		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<input class="form-control" type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
 		<label for="radio-bhk-4">4</label>
-		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+		<input class="form-control" type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
 		<label for="radio-bhk-5">5</label>
 	</div>
 	</form>
-<form class="form">
-	<h2>Bathroom</h2>
-	<div class="switch-field">
-		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+
+<form class="form" style="margin-left:20%;">
+	<h4 style="color:#edb43e">Bathroom</h4>
+	<div class="switch-field form-group">
+		<input class="form-control" type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
 		<label for="radio-bath-1">1</label>
-		<input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+		<input class="form-control" type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
 		<label for="radio-bath-2">2</label>
-		<input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+		<input class="form-control" type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
 		<label for="radio-bath-3">3</label>
-		<input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+		<input class="form-control" type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
 		<label for="radio-bath-4">4</label>
-		<input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+		<input class="form-control" type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
 		<label for="radio-bath-5">5</label>
 	</div>
-		<h2>Location</h2>
-	<div>
+		<h4 style="color:#edb43e">Location</h4>
+	<div class="form-group">
   <select class="location" name="" id="uiLocations">
     <option value="" disabled="disabled" selected="selected">Choose a Location</option>
 		<option>Electronic City</option>
         <option>Rajaji Nagar</option>
   </select>
 </div>
-	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
-	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
-
-<h2 style="text-align:center">Our Team</h2>
+	<button href="#" class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h4></h4> </div>
+</form>
+<h4 style="text-align:center">Our Team</h4>
 <div class="row">
   <div class="column">
-    <div class="card">
+    <div class="card" style="margin-left:20%; margin-right:20%;">
       <div class="container">
         <h2>Made By</h2>
-        <p>4th Year Student from DTU (Mathematics and Computing)</p>
-        <p>gouravmeenia_2k17mc44@dtu.ac.in</p>
+		<p><b>4th Year Student from DTU (Mathematics and Computing)</b></p>
+		<p><b>Gourav Meenia</b> (gouravmeenia_2k17mc44@dtu.ac.in)</p>
+		<p><b>Rahul Deewana</b> (rahuldeewana_2k17mc81@dtu.ac.in)</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
 </div>
-	
+</div>
 </body>
 </html>
